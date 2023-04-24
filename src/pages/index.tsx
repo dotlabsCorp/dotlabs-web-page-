@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function HomePage() {
   return (
-    <Layout headTitle="dotlabs(Medellin)">
+    <Layout headTitle="dotlabs()">
       <svg
         className="background__shade"
         viewBox="0 0 400 400"
@@ -80,8 +80,7 @@ function HomePage() {
         </h1>
         <p className="homepage__copy">
           Impulsamos el desarrollo y la adopción de blockchain a través de la
-          enseñanza, la investigación y la creación de proyectos.{" "}
-          <br/>
+          enseñanza, la investigación y la creación de proyectos. <br />
           <span>
             Queremos que la tecnología blockchain sea accesible para todos.
           </span>
