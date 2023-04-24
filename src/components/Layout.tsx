@@ -2,11 +2,14 @@ import { ComponentWithChildren } from "@/types";
 import { Footer } from "./Footer";
 import Header from "./Header";
 import Head from "next/head";
+import { Inter } from "next/font/google";
 
 interface LayoutProps extends ComponentWithChildren {
   headTitle: string;
   className?: string;
 }
+
+const inter = Inter({ subsets: ["cyrillic"] });
 
 const Layout = ({ children, headTitle, className }: LayoutProps) => {
   return (
@@ -22,9 +25,7 @@ const Layout = ({ children, headTitle, className }: LayoutProps) => {
         <link rel="icon" href="favicon.ico" />
       </Head>
       <Header />
-      <main className="background ">
-        {children}
-      </main>
+      <main className={`${inter.className} background`}>{children}</main>
       <Footer />
     </div>
   );

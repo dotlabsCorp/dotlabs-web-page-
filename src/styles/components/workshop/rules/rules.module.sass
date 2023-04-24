@@ -1,0 +1,62 @@
+.container
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 50px
+    max-width: 800px
+    margin: 0 auto
+    padding: 30px 20px
+    margin-bottom: 100px
+
+    & .buttonContainer
+        display: flex
+        flex-direction: column
+        justify-content: start
+        align-items: left
+        width: 100%
+
+    & h1
+        font-size: 2rem
+        line-height: 2rem
+        font-weight: 700
+        text-align: center
+
+    & .content
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: left
+        gap: 20px
+
+        & h2
+            font-size: 1.5rem
+            line-height: 1.5rem
+            font-weight: 700
+            text-align: left
+            margin-top: 10px
+
+        & ol
+            display: flex
+            flex-direction: column
+            padding-left: 20px
+            list-style: decimal
+            gap: 10px
+
+            & li
+                font-size: 1rem
+                line-height: 1.5rem
+                font-weight: 400
+                text-align: left
+
+@media screen and (min-width: 768px)
+    .container
+        gap: 20px
+
+        & .buttonContainer
+            margin-bottom: 20px
+
+        & h1
+            line-height: 2.5rem
+            font-size: 3rem
+            margin-bottom: 40px
