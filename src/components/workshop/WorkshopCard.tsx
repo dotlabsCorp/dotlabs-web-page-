@@ -1,19 +1,10 @@
 import { IoLocationSharp, IoCalendarOutline } from "react-icons/io5";
 import { FiExternalLink } from "react-icons/fi";
+import { Workshop } from "@/data/workshops";
 
 type WordShopCardTheme = "colorful" | "dark";
 
-type Location = { text: string; url: string };
-type Date = { text: string; url: string };
-
-export interface IWorkshopCard {
-  title: string;
-  date: Date;
-  speakers: string[];
-  tags: string[];
-  description: string;
-  calendarEventUrl: string;
-  location: Location;
+interface WorkshopCardProps extends Workshop {
   theme?: WordShopCardTheme;
 }
 
@@ -23,15 +14,18 @@ export const WorkshopCard = ({
   speakers,
   tags,
   description,
-  calendarEventUrl,
   location,
-
   theme = "colorful",
-}: IWorkshopCard) => {
+}: WorkshopCardProps) => {
   const DateEl = () => {
     if (date.text === "") return null;
     return (
-      <a href={date.url} className="card__metadata__location__link">
+      <a
+        href={date.url}
+        className="card__metadata__location__link"
+        rel="noreferrer"
+        target="_blank"
+      >
         <IoCalendarOutline />
         <p>
           {new Intl.DateTimeFormat("es", { dateStyle: "long" }).format(
@@ -52,15 +46,6 @@ export const WorkshopCard = ({
       >
         <IoLocationSharp />
         {location.text === "" ? "Lugar por definir..." : location.text}
-      </a>
-    );
-  };
-
-  const AddToCalendar = () => {
-    return (
-      <a href={calendarEventUrl} rel="noreferrer" target="_blank">
-        <FiExternalLink />
-        <p>Agendar</p>
       </a>
     );
   };

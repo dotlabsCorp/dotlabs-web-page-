@@ -1,8 +1,6 @@
-import WorkshopsData from "@/data/workshops.json";
+import { workshops } from "@/data/workshops";
 import { BackToHomeButton } from "../buttons/BackToHomeButton";
 import { WorkshopCard } from "./WorkshopCard";
-
-const { workshops } = WorkshopsData;
 
 const isOddIndex = (index: number): boolean => {
   return index % 2 === 1;
@@ -20,10 +18,10 @@ export const WorkshopsList = () => {
             tags={w.tags}
             speakers={w.speakers}
             description={w.description}
-            calendarEventUrl={w.calendarEventUrl}
             key={`${i}_${w.title}`}
             location={w.location}
             theme={isOddIndex(i) ? "dark" : "colorful"}
+            imgUrl={""}
           />
         );
       })}
