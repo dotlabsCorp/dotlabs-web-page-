@@ -1,5 +1,5 @@
 import Layout from "@/components/Layout";
-import { InfoCard } from "@/components/common/InfoCard/InfoCard";
+import { InfoCard } from "@/components/common/InfoCard";
 import { WorkshopsList } from "@/components/workshop/WorkshopsList";
 
 function WorkshopsPage() {
