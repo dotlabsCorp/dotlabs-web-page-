@@ -1,4 +1,3 @@
-import styles from "./InfoCard.module.sass";
 
 interface InfoCardProps {
   message: string;
@@ -10,7 +9,7 @@ interface InfoCardProps {
 
 export const InfoCard = ({ link, message }: InfoCardProps) => {
   return (
-    <div className={styles.container}>
+    <div className="infoCard__container">
       <p>
         {message} {link && <a href={link.url}>{link.text}</a>}
       </p>
