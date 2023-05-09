@@ -24,6 +24,7 @@
         padding: 2rem 20px
         gap: 15px
         z-index: 50
+        min-height: 100vh
 
     &__title
         display: flex
@@ -60,6 +61,44 @@
 
     &__copy > span
         font-weight: 700
+
+    &__smallText
+        max-width: 700px
+        margin-top: 0.5rem
+        font-size: 0.8rem
+        font-weight: 300
+        text-align: center
+        @include tablet
+            font-size: 1rem
+
+    &__smallText > span
+        font-weight: 700
+
+    &__partners
+        max-width: 700px
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-wrap: wrap
+        gap: 2rem
+        margin-top: 1rem
+        margin-bottom: 5rem
+        @include tablet
+            margin-top: 2rem
+
+    &__partners__item
+        display: flex
+        justify-content: center
+        align-items: center
+        max-width: 250px
+
+    &__partners__item__img
+        filter: opacity(50%) grayscale(60%)
+        image-resolution: 2000dpi
+        transition: all 0.3s ease-in-out
+
+    &__partners__item__img:hover
+        filter: opacity(1) grayscale(0)
 
     &__btn--container
         display: flex
