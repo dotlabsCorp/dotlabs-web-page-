@@ -1,6 +1,7 @@
 import PlatohedroLogo from "../../../../public/assets/partners/logo-platohedro.png";
 import HashHouseLogo from "../../../../public/assets/partners/logo-hashhouse.png";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export const PartnersSection = () => {
   return (
@@ -13,7 +14,14 @@ export const PartnersSection = () => {
           <span>Gracias por formar parte de nuestra historia.</span>
         </p>
       </div>
-      <div className="homepage__partners">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+        }}
+        className="homepage__partners"
+      >
         <a
           className="homepage__partners__item"
           href="https://platohedro.org/"
@@ -42,7 +50,7 @@ export const PartnersSection = () => {
             alt="Logo del club Hash Houses"
           />
         </a>
-      </div>
+      </motion.div>
     </div>
   );
 };

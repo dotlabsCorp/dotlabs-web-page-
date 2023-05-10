@@ -1,6 +1,7 @@
 import { workshops } from "@/data/workshops";
 import { BackToHomeButton } from "../buttons/BackToHomeButton";
 import { WorkshopCard } from "./WorkshopCard";
+import { motion } from "framer-motion";
 
 const isOddIndex = (index: number): boolean => {
   return index % 2 === 1;
@@ -8,7 +9,10 @@ const isOddIndex = (index: number): boolean => {
 
 export const WorkshopsList = () => {
   return (
-    <div className="workshopList">
+    <motion.div
+    initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }}
+    className="workshopList">
       <BackToHomeButton />
       {workshops.map((w, i) => {
         return (
@@ -25,6 +29,6 @@ export const WorkshopsList = () => {
           />
         );
       })}
-    </div>
+    </motion.div>
   );
 };

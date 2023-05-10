@@ -47,7 +47,7 @@
         background-size: 600% 600%
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
-        animation: gradient 1s
+        animation: gradient 1.5s infinite 
 
     &__copy
         max-width: 700px
@@ -125,10 +125,13 @@
         padding: 8px 0
         @include tablet
             font-size: 1.3rem
+            &:hover
+                box-shadow: 0px 0px 20px 3px rgb(1, 117,75, 0.3 )
 
         &--black
             background-color: transparent
             color: $main-font
+
         &--white
             background-color: $complementary-color
             color: $complementary-font

@@ -1,6 +1,7 @@
 import { IoLocationSharp, IoCalendarOutline } from "react-icons/io5";
 import { FiExternalLink } from "react-icons/fi";
 import { Workshop } from "@/data/workshops";
+import {motion} from "framer-motion"
 
 type WordShopCardTheme = "colorful" | "dark";
 
@@ -61,7 +62,12 @@ export const WorkshopCard = ({
     },
   };
   return (
-    <div className={`card ${themeToClassNameMap["cardMetadata"][theme]}`}>
+    <motion.div 
+    initial={{ opacity: 0}}
+    whileInView={{
+      opacity: 1,
+    }}
+    className={`card ${themeToClassNameMap["cardMetadata"][theme]}`}>
       <div className="card__metadata">
         <div className="card__metadata__title">
           <h1>{title}</h1>
@@ -80,6 +86,6 @@ export const WorkshopCard = ({
           <p>{tags.join(", ")}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
