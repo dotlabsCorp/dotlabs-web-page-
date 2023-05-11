@@ -78,4 +78,47 @@ export const workshops: Workshop[] = [
       url: "https://goo.gl/maps/5LiYA1zuj5Xz7WrU8",
     },
   },
+  {
+    title: "De mortal a Dios con Rust IV: Presentación de proyectos",
+    speakers: ["dotlabs() team"],
+    imgUrl: undefined,
+    description:
+      "¡Llegó el momento! En esta sesión haremos presentación de los proyectos construidos en clase. Ven y disfruta de este grandioso espacio y conecta con personas.",
+    date: {
+      text: "05/27/2023",
+      url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230527T190000Z%2F20230603T220000Z&details=%C2%A1Lleg%C3%B3%20el%20momento%21%20En%20esta%20sesi%C3%B3n%20haremos%20presentaci%C3%B3n%20de%20los%20proyectos%20construidos%20en%20clase.%20Ven%20y%20disfruta%20de%20este%20grandioso%20espacio%20y%20conecta%20con%20personas.&location=Hash%20House%2C%20Medell%C3%ADn&text=De%20mortal%20a%20Dios%20con%20Rust%20IV%3A%20Presentaci%C3%B3n%20de%20proyectos",
+    },
+    tags: [
+      "Blockchain",
+      "Rust",
+      "Smart Contracts",
+      "Astar",
+      "Polkadot",
+      "Substrate",
+    ],
+    location: {
+      text: "Hash House",
+      url: "https://goo.gl/maps/pBg3aBvVaspTwY9R6",
+    },
+  },
+  {
+    title: "Conociendo Celo",
+    speakers: ["Alejandro Soto"],
+    imgUrl: undefined,
+    description:
+      "Ven y conoce a Celo, la Blockchain de huella de carbono cero con mayor impacto en América Latina. En esta sesión aprenderemos sobre su ecosistema y cómo crear un Smart contracts en su red.",
+    date: {
+      text: "06/03/2023",
+      url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230603T190000Z%2F20230603T220000Z&details=Ven%20y%20conoce%20a%20Celo%2C%20la%20Blockchain%20de%20huella%20de%20carbono%20cero%20con%20mayor%20impacto%20en%20Am%C3%A9rica%20Latina.%20En%20esta%20sesi%C3%B3n%20aprenderemos%20sobre%20su%20ecosistema%20y%20c%C3%B3mo%20crear%20un%20Smart%20contracts%20en%20su%20red.&location=Globant%2C%20One%20Plaza&text=Conociendo%20Celo",
+    },
+    tags: [
+      "Blockchain",
+      "Celo",
+      "Solidity",
+    ],
+    location: {
+      text: "Globant, One Plaza.",
+      url: "https://goo.gl/maps/5LiYA1zuj5Xz7WrU8",
+    },
+  },
 ];
