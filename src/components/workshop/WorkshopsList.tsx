@@ -11,9 +11,10 @@ export const WorkshopsList = () => {
 
   return (
     <motion.div
-    initial={{ opacity: 0 }}
-    animate={{ opacity: 1 }}
-    className="workshopList">
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="workshopList"
+    >
       <BackToHomeButton />
       {upcomingWorkshops.map((w, i) => {
         return (
