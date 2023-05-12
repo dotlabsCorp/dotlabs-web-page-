@@ -3,18 +3,19 @@ import { BackToHomeButton } from "../buttons/BackToHomeButton";
 import { WorkshopCard } from "./WorkshopCard";
 import { motion } from "framer-motion";
 
-const isOddIndex = (index: number): boolean => {
-  return index % 2 === 1;
-};
-
 export const WorkshopsList = () => {
+  const today = new Date();
+  const upcomingWorkshops = workshops.filter(
+    (w) => new Date(w.date.text) > today
+  );
+
   return (
     <motion.div
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     className="workshopList">
       <BackToHomeButton />
-      {workshops.map((w, i) => {
+      {upcomingWorkshops.map((w, i) => {
         return (
           <WorkshopCard
             title={w.title}
@@ -24,7 +25,7 @@ export const WorkshopsList = () => {
             description={w.description}
             key={`${i}_${w.title}`}
             location={w.location}
-            theme={isOddIndex(i) ? "dark" : "colorful"}
+            theme={"dark"}
             imgUrl={""}
           />
         );
