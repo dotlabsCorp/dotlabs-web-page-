@@ -1,9 +1,10 @@
 import Link from "next/link";
-
 import Socials from "@/components/Socials";
 import { BackgroundGradient } from "@/components/common/BackgroundGradient";
+import Typewriter from "typewriter-effect";
 
 export const MainSection = () => {
+
   return (
     <>
       <BackgroundGradient />
@@ -11,7 +12,16 @@ export const MainSection = () => {
         <h1 className="homepage__title">
           <span>{"{"}</span>
           {"knowledge"}
-          <span>{"}"}</span>&nbsp;= dotlabs()
+          <span>{"}"}</span>&nbsp;=&nbsp;
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter.typeString("dots").pauseFor(300).deleteChars(1).typeString("labs( )").start().pauseFor(15000);
+            }}
+            options={{
+              cursor: '<span style="font-weight:  lighter">|</span>',
+              loop: true,
+            }}
+          />
         </h1>
         <p className="homepage__copy">
           Impulsamos el desarrollo y la adopción de blockchain a través de la
