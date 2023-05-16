@@ -74,8 +74,8 @@ export const workshops: Workshop[] = [
       "Substrate",
     ],
     location: {
-      text: "Globant, One Plaza.",
-      url: "https://goo.gl/maps/5LiYA1zuj5Xz7WrU8",
+      text: "Co-Work Latam Campestre.",
+      url: "https://goo.gl/maps/WWBJiHCJdVxCcbdS9",
     },
   },
   {
@@ -117,8 +117,52 @@ export const workshops: Workshop[] = [
       "Solidity",
     ],
     location: {
-      text: "Globant, One Plaza.",
-      url: "https://goo.gl/maps/5LiYA1zuj5Xz7WrU8",
+      text: "Hash House",
+      url: "https://goo.gl/maps/pBg3aBvVaspTwY9R6",
     },
   },
+  {
+    title: "Conociendo Horizen EON",
+    speakers: ["Juan Cogollo"],
+    imgUrl: undefined,
+    description:
+      "Horizen EON es una sidechain totalmente compatible con la Ethereum Virtual Machine y una plataforma para desarrollar Contratos Inteligentes.",
+    date: {
+      text: "06/10/2023",
+      url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230610T190000Z%2F20230610T220000Z&details=Horizen%20EON%20es%20una%20sidechain%20totalmente%20compatible%20con%20la%20Ethereum%20Virtual%20Machine%20y%20una%20plataforma%20para%20desarrollar%20Contratos%20Inteligentes.&location=Cowork%20LATAM%2C%20Campestre&text=Conociendo%20Horizen%20EON",
+    },
+    tags: [
+      "Blockchain",
+      "Horizen",
+      "Horizen EON",
+      "Zero Knowledge",
+      "Solidity",
+    ],
+    location: {
+      text: "Co-Work Latam Campestre.",
+      url: "https://goo.gl/maps/WWBJiHCJdVxCcbdS9",
+    },
+  },
+/**
+  {
+    title: "Proxy's Avanzados",
+    speakers: ["Junior Calle"],
+    imgUrl: undefined,
+    description:
+      "¿Cómo las empresas gestionan grandes cantidades de datos? Aprende técnicas avanzadas de proxys, migración de datos y actualización de objetos complejos en Solidity de la mano de uno de los desarrolladores blockchain del equipo de Unergy.",
+    date: {
+      text: "06/17/2023",
+      url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230617T190000Z%2F20230617T220000Z&details=%C2%BFC%C3%B3mo%20las%20empresas%20gestionan%20grandes%20cantidades%20de%20datos%3F%20Aprende%20t%C3%A9cnicas%20avanzadas%20de%20proxys%2C%20migraci%C3%B3n%20da%20datos%20y%20actualizaci%C3%B3n%20de%20objetos%20complejos%20en%20Solidity%20de%20la%20mano%20de%20uno%20de%20los%20desarrolladores%20blockchain%20del%20equipo%20de%20Unergy.&location=Cowork%20LATAM%2C%20Campestre&text=Proxy%27s%20Avanzado",
+    },
+    tags: [
+      "Blockchain",
+      "Proxy's",
+      "Solidity",
+    ],
+    location: {
+      text: "Co-Work Latam Campestre.",
+      url: "https://goo.gl/maps/WWBJiHCJdVxCcbdS9",
+    },
+  },
+  */
 ];
