@@ -122,7 +122,7 @@ export const workshops: Workshop[] = [
     },
   },
   {
-    title: "Conociendo Horizen EON",
+    title: "Conociendo Horizen | EON",
     speakers: ["Juan Cogollo"],
     imgUrl: undefined,
     description:
