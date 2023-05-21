@@ -1,7 +1,7 @@
 import { IoLocationSharp, IoCalendarOutline } from "react-icons/io5";
 import { FiExternalLink } from "react-icons/fi";
 import { Workshop } from "@/data/workshops";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
 
 type WordShopCardTheme = "colorful" | "dark";
 
@@ -39,15 +39,19 @@ export const WorkshopCard = ({
 
   const Location = () => {
     return (
-      <a
-        href={location.url}
-        className="card__metadata__location__link"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <IoLocationSharp />
-        {location.text === "" ? "Lugar por definir..." : location.text}
-      </a>
+      <>
+        {location.url ? (
+          <a
+            href={location.url}
+            className="card__metadata__location__link"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <IoLocationSharp />
+            {location.text === "" ? "Lugar por definir..." : location.text}
+          </a>
+        ) : null}
+      </>
     );
   };
 
@@ -62,12 +66,13 @@ export const WorkshopCard = ({
     },
   };
   return (
-    <motion.div 
-    initial={{ opacity: 0}}
-    whileInView={{
-      opacity: 1,
-    }}
-    className={`card ${themeToClassNameMap["cardMetadata"][theme]}`}>
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{
+        opacity: 1,
+      }}
+      className={`card ${themeToClassNameMap["cardMetadata"][theme]}`}
+    >
       <div className="card__metadata">
         <div className="card__metadata__title">
           <h1>{title}</h1>
