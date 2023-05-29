@@ -102,40 +102,38 @@ export const workshops: Workshop[] = [
     },
   },
   {
-    title: "Conociendo Celo",
+    title: "Estudiando el ataque a Tornado Cash",
+    speakers: ["Juan Cogollo"],
+    imgUrl: undefined,
+    description:
+      "En esta sesión recrearemos el ataque a Tornado Cash para conocer un nuevo vector de ataque y la forma de prevenirlo.",
+    date: {
+      text: "06/03/2023",
+      url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230603T190000Z%2F20230603T220000Z&details=En%20esta%20sesi%C3%B3n%20recrearemos%20el%20ataque%20a%20Tornado%20Cash%20para%20conocer%20un%20nuevo%20vector%20de%20ataque%20y%20la%20forma%20de%20prevenirlo.&location=Co-work%20latam&text=Estudiando%20el%20ataque%20a%20Tornado%20Cash",
+    },
+    tags: [
+      "Blockchain",
+      "Tornado Cash",
+      "Solidity",
+    ],
+    location: {
+      text: "Co-Work Latam Campestre.",
+      url: "https://goo.gl/maps/WWBJiHCJdVxCcbdS9",
+    },
+  },
+  {
+    title: "ERC-20 & ERC-721 en CELO",
     speakers: ["Alejandro Soto"],
     imgUrl: undefined,
     description:
       "Ven y conoce a Celo, la Blockchain de huella de carbono cero con mayor impacto en América Latina. En esta sesión aprenderemos sobre su ecosistema y cómo crear un Smart contracts en su red.",
     date: {
-      text: "06/03/2023",
-      url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230603T190000Z%2F20230603T220000Z&details=Ven%20y%20conoce%20a%20Celo%2C%20la%20Blockchain%20de%20huella%20de%20carbono%20cero%20con%20mayor%20impacto%20en%20Am%C3%A9rica%20Latina.%20En%20esta%20sesi%C3%B3n%20aprenderemos%20sobre%20su%20ecosistema%20y%20c%C3%B3mo%20crear%20un%20Smart%20contracts%20en%20su%20red.&location=Globant%2C%20One%20Plaza&text=Conociendo%20Celo",
+      text: "06/10/2023",
+      url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230610T190000Z%2F20230610T220000Z&details=Ven%20y%20conoce%20a%20Celo%2C%20la%20Blockchain%20de%20huella%20de%20carbono%20cero%20con%20mayor%20impacto%20en%20Am%C3%A9rica%20Latina.%20En%20esta%20sesi%C3%B3n%20aprenderemos%20sobre%20su%20ecosistema%20y%20c%C3%B3mo%20crear%20un%20Smart%20contracts%20en%20su%20red.&location=Co-work%20latam&text=ERC-20%20%26%20ERC-721%20en%20CELO",
     },
     tags: [
       "Blockchain",
       "Celo",
-      "Solidity",
-    ],
-    location: {
-      text: "Hash House",
-      url: "https://goo.gl/maps/pBg3aBvVaspTwY9R6",
-    },
-  },
-  {
-    title: "Conociendo Horizen | EON",
-    speakers: ["Juan Cogollo"],
-    imgUrl: undefined,
-    description:
-      "Horizen EON es una sidechain totalmente compatible con la Ethereum Virtual Machine y una plataforma para desarrollar Contratos Inteligentes.",
-    date: {
-      text: "06/10/2023",
-      url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230610T190000Z%2F20230610T220000Z&details=Horizen%20EON%20es%20una%20sidechain%20totalmente%20compatible%20con%20la%20Ethereum%20Virtual%20Machine%20y%20una%20plataforma%20para%20desarrollar%20Contratos%20Inteligentes.&location=Cowork%20LATAM%2C%20Campestre&text=Conociendo%20Horizen%20EON",
-    },
-    tags: [
-      "Blockchain",
-      "Horizen",
-      "Horizen EON",
-      "Zero Knowledge",
       "Solidity",
     ],
     location: {
