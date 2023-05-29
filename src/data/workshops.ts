@@ -109,7 +109,7 @@ export const workshops: Workshop[] = [
       "En esta sesión recrearemos el ataque a Tornado Cash para conocer un nuevo vector de ataque y la forma de prevenirlo.",
     date: {
       text: "06/03/2023",
-      url: "",
+      url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230603T190000Z%2F20230603T220000Z&details=En%20esta%20sesi%C3%B3n%20recrearemos%20el%20ataque%20a%20Tornado%20Cash%20para%20conocer%20un%20nuevo%20vector%20de%20ataque%20y%20la%20forma%20de%20prevenirlo.&location=Co-Work%20LATAM%2C%20Campestre&text=Estudiando%20el%20ataque%20a%20Tornado%20Cash",
     },
     tags: [
       "Blockchain",
@@ -131,7 +131,7 @@ export const workshops: Workshop[] = [
       "Ven y conoce a Celo, la Blockchain de huella de carbono cero con mayor impacto en América Latina. En esta sesión aprenderemos sobre su ecosistema y cómo crear un Smart contracts en su red.",
     date: {
       text: "06/10/2023",
-      url: "",
+      url: "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20230610T190000Z%2F20230610T220000Z&details=Ven%20y%20conoce%20a%20Celo%2C%20la%20Blockchain%20de%20huella%20de%20carbono%20cero%20con%20mayor%20impacto%20en%20Am%C3%A9rica%20Latina.%20En%20esta%20sesi%C3%B3n%20aprenderemos%20sobre%20su%20ecosistema%20y%20c%C3%B3mo%20crear%20un%20Smart%20contracts%20en%20su%20red.&location=Co-Work%20LATAM%2C%20Campestre&text=ERC-20%20%26%20ERC-721%20en%20CELO",
     },
     tags: [
       "Blockchain",
