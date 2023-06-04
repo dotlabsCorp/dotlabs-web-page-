@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import ClientOnly from "@/components/common/ClientOnly";
 import { InfoCard } from "@/components/common/InfoCard";
 import { WorkshopsList } from "@/components/workshop/WorkshopsList";
 
@@ -12,7 +13,9 @@ function WorkshopsPage() {
           url: "/talleres/reglas",
         }}
       />
-      <WorkshopsList />
+      <ClientOnly>
+        <WorkshopsList />
+      </ClientOnly>
     </Layout>
   );
 }
