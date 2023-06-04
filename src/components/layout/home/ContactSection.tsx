@@ -1,17 +1,24 @@
 import React from 'react'
+import { gql } from '@apollo/client'
+import { useMutation } from '@apollo/client/react'
 
-const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+const CREATE_CONSULTANCY = gql`
+  mutation CreateConsultancy($createConsultancyInput: CreateConsultancyInput!) {
+    createConsultancy(createConsultancyInput: $createConsultancyInput)
+  }
+`
+
+export const ContactSection = () => {
+  const [createConsultancy] = useMutation(CREATE_CONSULTANCY)
+  const handleOnSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     // manage the form with objectfromdataentries
     const formData = new FormData(e.currentTarget)
     const objectFormData = Object.fromEntries(formData.entries())
     console.log(objectFormData)
-    // send the data to the backend
-    //axios.post('http://localhost:3001/api/contact', objectFormData) for example
-    // objectFormData = {name:name, phone:phone, email:email, description:description}
-}
+    createConsultancy({ variables: { createConsultancyInput: objectFormData } })
+  }
 
-export const ContactSection = () => {
   return (
     <section id='contact' className='homepage homepage__container'>
       <h1 className='homepage__title'>¿Necesitas una consultoria?</h1>
@@ -19,31 +26,31 @@ export const ContactSection = () => {
         Llena el siguiente formulario y recibe una consultoria de calidad
       </p>
       <form onSubmit={handleOnSubmit} className='homepage__contact'>
-        <label htmlFor='nombre'>
+        <label htmlFor='fullName'>
           Nombre
-          <input required name='nombre' type='text' placeholder='Luis Diaz' />
+          <input required name='fullName' type='text' placeholder='Luis Diaz' />
         </label>
-        <label htmlFor='telefono'>
+        <label htmlFor='phoneNumber'>
           Telefono
           <input
             required
-            name='telefono'
-            type='number'
+            name='phoneNumber'
+            type='text'
             placeholder='3202020020'
           />
         </label>
-        <label htmlFor='correo'>
+        <label htmlFor='email'>
           Correo Electronico
           <input
             required
-            name='correo'
+            name='email'
             type='email'
             placeholder='example@gmail.com'
           />
         </label>
-        <label htmlFor='descripcion'>
+        <label htmlFor='description'>
           Descripción del problema
-          <textarea required name='descripcion' placeholder='Necesito...' />
+          <textarea required name='description' placeholder='Necesito...' />
         </label>
         <button type='submit'>Enviar</button>
       </form>
