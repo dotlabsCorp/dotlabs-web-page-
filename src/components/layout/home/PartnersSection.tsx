@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export const PartnersSection = () => {
   return (
-    <div className="homepage homepage__container">
+    <section id="patner" className="homepage homepage__container">
       <div>
         <h1 className="homepage__title">Aliados</h1>
         <p className="homepage__smallText">
@@ -51,6 +51,6 @@ export const PartnersSection = () => {
           />
         </a>
       </motion.div>
-    </div>
+    </section>
   );
 };
