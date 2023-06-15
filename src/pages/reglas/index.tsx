@@ -4,7 +4,7 @@ import styles from "@/styles/components/workshop/rules/rules.module.sass";
 
 function WorkshopsPage() {
   return (
-    <Layout headTitle="Talleres">
+    <Layout headTitle="Reglas">
       <div className={styles.container}>
         <div className={styles.buttonContainer}>
           <BackToHomeButton />
