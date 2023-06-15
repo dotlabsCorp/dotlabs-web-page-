@@ -9,7 +9,7 @@ function WorkshopsPage() {
         message="Te invitamos a revisar las reglas de la comunidad"
         link={{
           text: "aquí",
-          url: "/talleres/reglas",
+          url: "/reglas",
         }}
       />
       <WorkshopsList />

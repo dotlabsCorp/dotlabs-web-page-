@@ -16,6 +16,7 @@ export const WorkshopsList = () => {
       className="workshopList"
     >
       <BackToHomeButton />
+      {upcomingWorkshops.length === 0 && <h1 className="homepage__title">Estamos preparando eventos para el futuro 🚀</h1>}
       {upcomingWorkshops.map((w, i) => {
         return (
           <WorkshopCard
@@ -28,6 +29,7 @@ export const WorkshopsList = () => {
             location={w.location}
             theme={"dark"}
             imgUrl={""}
+            registerLink={w.registerLink}
           />
         );
       })}

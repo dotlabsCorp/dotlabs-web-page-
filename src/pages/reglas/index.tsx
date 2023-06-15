@@ -62,6 +62,10 @@ function WorkshopsPage() {
               No se permitirá el ingreso de personas en estado de ebriedad o
               bajo los efectos de sustancias psicoactivas.
             </li>
+            <li>
+            En nuestra comunidad, está prohibido discutir cualquier tema relacionado 
+            con el trading o la especulación con los mercados financieros.
+            </li>
           </ol>
 
           <p>

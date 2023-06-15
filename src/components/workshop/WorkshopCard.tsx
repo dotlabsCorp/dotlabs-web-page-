@@ -16,6 +16,7 @@ export const WorkshopCard = ({
   tags,
   description,
   location,
+  registerLink,
   theme = "colorful",
 }: WorkshopCardProps) => {
   const DateEl = () => {
@@ -70,7 +71,7 @@ export const WorkshopCard = ({
     className={`card ${themeToClassNameMap["cardMetadata"][theme]}`}>
       <div className="card__metadata">
         <div className="card__metadata__title">
-          <h1>{title}</h1>
+          <a href={registerLink} target="_blank" rel="noreferrer"><h1>{title}</h1></a>
           <p> -&gt; {speakers.join(" & ")}</p>
         </div>
         <div>
