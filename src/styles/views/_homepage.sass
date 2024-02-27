@@ -31,6 +31,7 @@
         display: flex
         justify-content: center
         font-size: 2.4rem
+        text-align: center
         font-weight: 700
         color: $main-font
         line-height: 3rem
@@ -48,7 +49,7 @@
         background-size: 600% 600%
         -webkit-background-clip: text
         -webkit-text-fill-color: transparent
-        animation: gradient 1.5s infinite 
+        animation: gradient 1.5s infinite
 
     &__copy
         max-width: 700px
@@ -137,5 +138,57 @@
             background-color: $complementary-color
             color: $complementary-font
 
+    &__contact
+        width: 80%
+        display: flex
+        flex-direction: column
+        gap: 20px
+        & label
+            display: flex
+            flex-direction: column
+            gap: 8px
+            & input, textarea
+                border: solid 1px $complementary-color
+                border-radius: 8px
+                padding: 8px 16px
+                font-size: 1rem
+                line-height: 1.5rem
+                color: $main-font
+                background-color: transparent
+                transition: all 0.3s ease-in-out
+                &:focus
+                    outline: none
+                    box-shadow: 0px 0px 20px 3px rgb(1, 117,75, 0.3 )
+        & button
+            width: 100%
+            border: solid 1px $complementary-color
+            border-radius: 8px
+            padding: 8px 16px
+            font-size: 1rem
+            font-weight: bold
+            line-height: 1.5rem
+            color: $main-font
+            background-color: transparent
+            transition: all 0.3s ease-in-out
+            &:hover
+                background-color: white
+                color: black
+        & :nth-child(1)
+            grid-area: name
+        & :nth-child(2)
+            grid-area: tel
+        & :nth-child(3)
+            grid-area: email
+        & :nth-child(4)
+            grid-area: desc
+        & :nth-child(5)
+            grid-area: sub
+
+        @include smartphone
+            padding: 2rem 20px
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-areas: "name tel""email email""desc desc""sub sub"
+
 master
-    color: red
+        color: red
